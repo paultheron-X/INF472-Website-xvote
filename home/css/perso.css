@@ -1,0 +1,477 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 
+    Author     : 
+*/
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../data/fonts/Rubik-Regular.eot');
+    src: url('../data/fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../data/fonts/Rubik-Regular.woff2') format('woff2'),
+        url('../data/fonts/Rubik-Regular.woff') format('woff'),
+        url('../data/fonts/Rubik-Regular.ttf') format('truetype'),
+        url('../data/fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../data/fonts/Poppins-Light.eot');
+    src: url('../data/fonts/Poppins-Light.eot?#iefix') format('embedded-opentype'),
+        url('../data/fonts/Poppins-Light.woff2') format('woff2'),
+        url('../data/fonts/Poppins-Light.woff') format('woff'),
+        url('../data/fonts/Poppins-Light.ttf') format('truetype'),
+        url('../data/fonts/Poppins-Light.svg#Poppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family:'Rubik';
+    /*background-color: lightgrey;*/
+}
+
+nav {
+    font-family:'Poppins';
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Poppins';
+}
+
+.lignegauche {
+    border-left: 3px solid grey;
+    padding-left: 12px;
+}
+
+
+.particularites {
+    margin-top: 50px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.produitsPhares {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.unSysteme{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.temoignage {
+    margin-top: 50px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.twoEqualColumns td, .twoEqualColumns th {
+    width: 50%;
+}
+
+
+#progress{
+	background-color: #F69202;
+	height: 3px;
+	width: 0;
+    position: fixed;
+	top: 15;
+	left: 0;
+	z-index: 9999;
+}
+
+
+
+
+
+
+.themeColorBackgroung {
+    background-color: #194D6F;   
+}
+
+.themeColor{
+    color: #194D6F;
+}
+
+.themeColorContent {
+    color:#F69202;
+}
+
+.themeColorContentLight {
+    background-color: #ffce89;
+}
+
+.themeColorContentLink{
+    color:#F69202;
+}
+
+.themeColorContentLink:hover{
+    color:#F69202;
+}
+
+body a {
+    color : #F69202;
+}
+body a:hover {
+    color : #ffce89;
+}
+
+em {
+    color: #F69202;
+}
+
+#particles-js{
+    position : absolute;
+    top: 0%;
+    height:100%;
+    width: 100%;
+    z-index: inherit;
+}
+
+
+.display-4{
+    position: relative;
+	top: 10;
+    left: 15;
+
+}
+
+.loader-container {
+    position:fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgb(252, 252, 252);
+    z-index: 999;
+}
+.loader.hidden {
+    display: none;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 120px;
+    height: 120px;
+    border: 16px solid #e5e5e5;
+    border-top: 16px solid blue;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+    animation: loader 1s infinite;
+}
+
+@keyframes loader{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.voletH {
+    position:absolute;
+    top: 0;
+    left:0;
+    width:50%;
+    height:50%;
+    background-color: rgb(68, 15, 15);
+    z-index: 999;
+}
+.voletH.partH {
+    transition: translateX(50px) 1s;
+}
+
+.voletB.partH {
+    animation: voletH 1s;
+}
+.voletH.hidden {
+    display:none;
+}
+
+.voletB.partH {
+    position:absolute;
+    top: 50%;
+    left:0;
+    width:100%;
+    height:50%;
+    background-color: rgb(126, 13, 13);
+    z-index: 999;
+    animation: voletH 1s;
+}
+
+
+@keyframes partB{
+    0%{
+        transform: translateY(0%)
+    }
+    100%{
+        transform: translateY(-100%)
+    }
+}
+
+
+.bgSizeCover {
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    background-image: url('../data/images/background.jpeg');
+    background-size: cover;
+    opacity:30%;
+}
+
+.triangle{
+    height:10%;
+    width:100%;
+    top:100vh;
+    position:absolute;
+    background-image: url('../data/images/triangle.jpg');
+    background-size:  100% 100%;
+}
+
+.welcomejumbotron{
+    height: 110vh;
+    background-color: white;
+    vertical-align:middle;
+}
+
+.linear-grad{
+    background:
+        linear-gradient(
+        to bottom,
+        hsla(204, 63%, 27%, 0) 0%,
+        hsla(204, 63%, 27%, 0.008) 18.3%,
+        hsla(204, 63%, 27%, 0.031) 33.4%,
+        hsla(204, 63%, 27%, 0.067) 45.6%,
+        hsla(204, 63%, 27%, 0.114) 55.4%,
+        hsla(204, 63%, 27%, 0.173) 63%,
+        hsla(204, 63%, 27%, 0.24) 68.9%,
+        hsla(204, 63%, 27%, 0.314) 73.3%,
+        hsla(204, 63%, 27%, 0.395) 76.7%,
+        hsla(204, 63%, 27%, 0.48) 79.3%,
+        hsla(204, 63%, 27%, 0.567) 81.6%,
+        hsla(204, 63%, 27%, 0.657) 83.9%,
+        hsla(204, 63%, 27%, 0.746) 86.5%,
+        hsla(204, 63%, 27%, 0.834) 89.8%,
+        hsla(204, 63%, 27%, 0.919) 94.2%,
+        hsl(204, 63%, 27%) 100%
+        );
+    height:100%;
+    width:100%;
+    top:0;
+    position:absolute;
+    opacity:100%;
+}
+
+
+.getCenter {
+    text-align:center;
+}
+
+.prepareRollingText {
+    height:30px;
+    overflow:hidden;
+    position : relative;
+    text-align:center;
+}
+
+ul.rollingText {
+    color:black;
+    position:relative;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.rollingText li {
+    line-height: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #194D6F;
+}
+
+
+.centrageAccueil{
+    height:73%;
+}
+
+.skewed {
+    position: absolute;
+    top: 100vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 0;
+    height: 20%;
+    border-style: solid;
+    border-width: 10% 100% 0% 0%;
+    border-color: #194D6F transparent transparent transparent;
+  }
+
+
+  
+
+.page-transition__blue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #2c84be;
+    z-index: 10000;
+  }
+
+.page-transition__gold {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #F69202;
+    z-index: 10000;
+  }
+
+
+.cache {
+    display: none;
+}
+
+.previous {
+    background-color: #194D6F;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.centre {
+    position: absolute;
+    z-index: inherit;
+    top:50%;
+    left: 50%;
+    transform: translate(-40%, -50%)
+}
+
+svg {
+    background-color: #194D6F;
+    zoom:2.3;
+    z-index: 9999;
+}
+
+.chevron {
+    -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+    color: #F69202;
+    position: absolute;
+    top:120%;
+    left:50%;
+ }
+
+ @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 20px);
+              transform: translate(0, 20px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); } }
+  
+@keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 20px);
+              transform: translate(0, 20px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); } }
+  
+  
+
+.chevron::before {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 20px; }
+      
+.chevron.right:before {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+      
+.chevron.bottom:before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg); }
+      
+.chevron.left:before {
+    left: 0.25em;
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg); }
+      
+      
+
+
+
+
+#sortable {
+    width:300px;
+    margin:auto;
+    text-align:center;
+    list-style: none;
+    padding: 0;
+}
+  
+.monSortable ul li {
+    border: 2px #194D6F solid ;
+    border-radius: 8px;
+    padding: .5em;
+    margin-bottom:10px;
+    background-color:#ffe5c1
+}
+
+#btnSubmitVote{
+    width:80px;
+    margin:auto;
+    text-align:center;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(246,146,2, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+.custom-toggler.navbar-toggler {
+    border-color: #F69202
+} 
