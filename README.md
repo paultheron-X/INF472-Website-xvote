@@ -1,5 +1,5 @@
 # XVote
-*Jérémie Dentan, Paul Théron*
+*Jérémie Dentan (École Polytechnique), Paul Théron (École Polytechnique)*
 
 ## Description
 This git repository is the source code of a website that enable to organize votes online.
